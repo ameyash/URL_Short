@@ -1,0 +1,23 @@
+.container{
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding: 30px;
+    height: 300px;
+    -moz-box-shadow: 0 0 3px rgb(192, 192, 192);
+    -webkit-box-shadow: 0 0 3px rgb(192, 192, 192);
+    box-shadow: 0 0 3px rgb(192, 192, 192);
+}
+
+.form-control{
+    display: initial;
+}
+
+.container-text{
+    margin-top: 20px;
+}
+
+#search-text{
+    width: 500px;
+}

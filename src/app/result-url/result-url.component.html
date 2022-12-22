@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container-title" style="text-align: left; padding-left: 230px;">
+        <h2 style="font-weight: bold; padding-bottom: 10px;">Your shortened URL</h2>
+        <p>Copy the shortened link and share it in messages, texts, posts, websites and other locations.</p>
+    </div>
+    <div class="container-searchURL">
+        <input class="form-control mr-sm-2" id="search-text" type="search" placeholder="Search" aria-label="Search" #userinput [(ngModel)]="data">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="button"(click)="onclickCopy(userinput)">Click to copy</button>
+    </div>
+    <div class="container-text">
+        <p>URL Shorten is a tool to shorten a URL or reduce a link</p>
+        <p>Use our URL Shortener to create a shortened link making it easy to remember</p>
+    </div>
+</div>

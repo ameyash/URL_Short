@@ -1,0 +1,21 @@
+<div *ngIf="!url_result; else elseBlock">
+  <div class="container-header">
+    <app-header></app-header>
+  </div>
+
+  <div class="container-pasteURL">
+    <app-paste-url (searchURL)="searchWeather($event)"></app-paste-url>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="container-header">
+    <app-header></app-header>
+  </div>
+
+  <div class="container-pasteURL">
+    <app-result-url data = {{url_result?.result_url}}></app-result-url>
+  </div>
+</ng-template>
+
+<router-outlet></router-outlet>
